@@ -52,8 +52,17 @@ Following steps were followed to build the model:
 2. Random Forest Classifier 
 3. K Nearest Neighbours 
 4. Naive Bayes Classifier.
+5. Support vector machine.
+6. XGBoost.
+7. Decision Tree Classification Algorithm.
 
 # Result
-The task was to determine if a given patient is under the risk of CHD in the coming 10 years. To do this, following features were at our disposal: 
-'id','age','education','sex','cigsPerDay','BPMeds','prevalentStroke','prevalentHyp','diabe tes','totChol','sysBP','BMI','glucose'. 'is_smoking','heartRate','diaBP','TenYearCHD'. Logistic Regression, Random Forest Classifier, K Nearest Neighbours, Naive Bayes Classifier were used Of which, the Random Forest classifier yielded best results. 
-Using Shapley analysis it was found that education, age, cigsPerDay, sysBP, and totChol were top 5 most influential factors in determination of whether the patient is facing the risk of CHD or not.
+I started with data cleaning and necessary feature changes, then to comprehend the data an
+EDA was performed which yielded many meaningful insights about the data, then the features
+were trimmed down based on various feature selection techniques and finally 6 classification
+models were implemented namely decision tree classifier, logistic regression classifier, KNN
+classifier, SVC, XGB and random forest classifier. All of the models were hyperparameter tunned
+and evaluated based on different evaluation techniques, and the main intention of hyperparameter
+tunning was to improve overall model performance with stress on reducing true negatives. Out of
+the models implemented Random Forest, XGB and KNN showed good results and while
+considering overall performance Random Forest showed great results.
